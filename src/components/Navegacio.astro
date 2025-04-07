@@ -1,0 +1,41 @@
+---
+
+---
+
+<header>
+    <a href="/" class="text-nav">ap</a>
+    <nav>
+        <a href="/information" class="text-nav">Información</a>
+        <!-- <a href="/writing" class="text-nav">Writing</a> -->
+        <a href="/contact" class="text-nav">Contacto</a>
+    </nav>
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 570px;
+        height: 150px;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+    .text-nav {
+        text-decoration: none;
+        color: black;
+        font-family: monospace;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        letter-spacing: -.05em;
+        font-weight: bold;
+    }
+
+    @media (max-width: 576px){
+        header{
+            width: 300px;
+        }
+    }
+</style>

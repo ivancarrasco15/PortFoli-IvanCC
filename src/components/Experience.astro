@@ -1,0 +1,102 @@
+---
+import JSON_FILE from "../../data/cv.json";
+const pageInfo = JSON_FILE.Experience;
+import ArrowRight from '../assets/arrow-right.svg';
+---
+<div class="experiences">
+    <h2>Experiencia</h2>
+        {JSON_FILE.Experience.map((exp) => (
+            <>
+                <div class="experience-card">
+                    <img src={exp["logo"]} alt="" />
+                    <div class="text-card">
+                        <span class="company">{exp.company}</span>
+                        <span class="role">{exp.role}</span>
+                        <span class="date">{exp.date}</span>
+                    </div>
+                        
+                </div>
+            </>
+        ))}
+    <div class="container-resume">
+        <a class="resume" href="#">Descargar resumen <span><img src={ArrowRight.src} alt="Arrow Icon" class="arrow-icon"></span></a>
+    </div>
+</div>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .experiences {
+        display: flex;
+        flex-direction: column;
+        width: 570px;
+    }
+    .experiences h2{
+        display: flex;
+        font-family: sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .experience-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        height: 140px;
+        border-bottom: 1px solid rgb(219, 219, 219);
+    }
+    .experience-card img{
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+    }
+    .text-card{
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        gap: 7px;
+    }
+    .company {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1E293B;
+    }
+    .role {
+        font-size: 18px;
+        color: #334155;
+    }
+    .date {
+        font-family: monospace;
+        font-size: 14px;
+        color: #64748B;
+        margin-top: 10px;
+    }
+    .container-resume {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .resume {
+        display: flex;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #64748B;
+        text-decoration: none;
+    }
+
+    .arrow-icon {
+        width: 20px;
+        height: auto;
+        display: block;
+    }
+    @media (max-width: 550px){
+        .experiences{
+            width: 350px;
+        }
+    }
+    
+</style>

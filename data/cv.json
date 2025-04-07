@@ -1,0 +1,161 @@
+{
+    "name": "Iván",
+    "title": "Desarrollador de páginas web",
+    "profile_summary": "Soy un desarrollador web apasionado por crear experiencias digitales excepcionales. Con una sólida formación en desarrollo front-end y back-end, me especializo en la creación de sitios web y aplicaciones funcionales, atractivas y fáciles de usar.",
+    "contact": {
+        "Email": "ivancarrasco1509@gmail.com",
+        "Phone": "+34 685 231 089",
+        "Location": "Viladecans, Catalunya",
+        "Website": "https://alexferrer.dev",
+        "Linkedin": "https://www.linkedin.com/in/alexferrer",
+        "Github": "https://github.com/alexferrer"
+    },
+    "Information": {
+        "name": "Información",
+        "bio": "¡Hola! Soy Iván. Desarrollo mis propios productos y, al mismo tiempo, colaboro con empresas increíbles para ayudarles a crear los suyos. Recientemente, trabajé con MoonPay para contribuir al futuro de los pagos. Antes de eso, estuve en Monzo, el banco de más rápido crecimiento en el Reino Unido, donde inicialmente me uní como diseñador de producto y luego hice la transición a un rol de ingeniero web, colaborando con varios equipos para replantear la banca moderna para millones de clientes. También trabajé en Kalo (que más tarde se convirtió en Polywork), donde fui la primera contratación en ingeniería de UI, encargándome de desarrollar el sistema de diseño y garantizar un alto estándar de calidad en toda la experiencia del producto. Siempre he estado entre el diseño y la ingeniería, pero el hilo conductor ha sido mi pasión por crear cosas que a la gente le encante usar. Si estás interesado en colaborar conmigo, no dudes en contactarme aquí: ivancarrasco1509@gmail.com."
+    },
+    "Contact": {
+        "name": "Contacto",
+        "bio": "Si deseas ponerte en contacto, puedes hacerlo a través de los siguientes métodos. Ten en cuenta que actualmente no estoy disponible para proyectos freelance."
+    },
+    "Experience": [{
+            "company": "Mainframe",
+            "role": "Ingeniero de Diseño",
+            "logo": "https://alexpate.com/_next/image?url=%2Fmainframe-logo.jpg&w=64&q=75",
+            "date": "Noviembre 2024 - Presente"
+        },
+        {
+            "company": "MoonPay",
+            "role": "Ingeniero Front-End Senior",
+            "logo": "https://alexpate.com/_next/image?url=%2Fmoonpay-logo.jpg&w=64&q=75",
+            "date": "Abril 2022 - Agosto 2024"
+        },
+        {
+            "company": "Monzo",
+            "role": "Ingeniero Web / Diseñador de Producto",
+            "logo": "https://alexpate.com/_next/image?url=%2Fmonzo-logo.png&w=64&q=75",
+            "date": "Mayo 2019 - Noviembre 2021"
+        },
+        {
+            "company": "Kalo",
+            "role": "Ingeniero de UI",
+            "logo": "https://alexpate.com/_next/image?url=%2Fkalo-logo.jpg&w=64&q=75",
+            "date": "Febrero 2017 - Mayo 2019"
+        },
+        {
+            "company": "Pusher",
+            "role": "Desarrollador Front-End",
+            "logo": "https://alexpate.com/_next/image?url=%2Fpusher-logo.jpg&w=64&q=75",
+            "date": "Septiembre 2015 - Enero 2017"
+        }
+    ],
+    "projects": [{
+            "id": "1",
+            "slug": "taskmanager-app",
+            "name": "Aplicación TaskManager",
+            "description": "Aplicación de gestión de tareas con React y Firebase.",
+            "url": "https://taskmanager.dev",
+            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
+        },
+        {
+            "id": "2",
+            "slug": "e-commerce-platform",
+            "name": "Plataforma de E-commerce",
+            "description": "Plataforma de comercio electrónico desarrollada con Vue.js y Node.js.",
+            "url": "https://ecommerce.example.com",
+            "image": "https://images.pexels.com/photos/2265482/pexels-photo-2265482.jpeg"
+        },
+        {
+            "id": "3",
+            "slug": "blog-cms",
+            "name": "CMS para Blogs",
+            "description": "Sistema de gestión de contenidos para blogs con Astro y Markdown.",
+            "url": "https://blogcms.dev",
+            "image": "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg"
+        },
+        {
+            "id": "4",
+            "slug": "fitness-tracker",
+            "name": "Rastreador de Fitness",
+            "description": "Aplicación para monitorizar entrenamientos y progreso físico.",
+            "url": "https://fitnesstracker.dev",
+            "image": "https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg"
+        }
+    ],
+    "skills": [{
+            "name": "HTML5",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+        },
+        {
+            "name": "CSS3",
+            "logo": "https://www.svgrepo.com/show/303263/css3-logo.svg"
+        },
+        {
+            "name": "JavaScript",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        },
+        {
+            "name": "Astro",
+            "logo": "https://astro.build/assets/press/astro-icon-dark.svg"
+        },
+        {
+            "name": "TailwindCSS",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+        },
+        {
+            "name": "Bootstrap",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+        },
+        {
+            "name": "WordPress",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg"
+        },
+        {
+            "name": "PHP",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+        },
+        {
+            "name": "Workbench",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Antu_mysql-workbench.svg/2048px-Antu_mysql-workbench.svg.png"
+        },
+        {
+            "name": "SQL",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+        }
+    ],
+    "languages": [{
+            "language": "Catalán",
+            "level": "Nativo",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_es-catalu%C3%B1a_300px.png"
+        },
+        {
+            "language": "Español",
+            "level": "Nativo",
+            "flag": "https://flagcdn.com/w320/es.png"
+        },
+        {
+            "language": "Inglés",
+            "level": "Avanzado",
+            "flag": "https://flagcdn.com/w320/gb.png"
+        }
+    ],
+    "Formation": [{
+            "company": "Escola Goar",
+            "role": "Educación secundaria Obligatoria",
+            "logo": "https://escolagoar.gdocus.com/pluginfile.php/1/core_admin/logocompact/300x300/1721245423/Logo%20GOAR%20color.jpeg",
+            "date": "2018 - 2021"
+        },
+        {
+            "company": "CEFP Núria",
+            "role": "Sistemas Microinformáticos y Redes",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCkv69mBoNlteQ6HC3S2SlJrtU7LCVhJu4NA&s",
+            "date": "2022 - 2024"
+        },
+        {
+            "company": "CEFP Núria",
+            "role": "Desarrollo de Páginas Web",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCkv69mBoNlteQ6HC3S2SlJrtU7LCVhJu4NA&s",
+            "date": "2025 - Presente"
+        }
+    ]
+}

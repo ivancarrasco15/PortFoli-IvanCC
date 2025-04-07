@@ -1,0 +1,77 @@
+---
+import JSON_FILE from "../../data/cv.json";
+import ArrowRight from '../assets/arrow-right.svg';
+---
+<div class="formation">
+    <h2>Formación</h2>
+        {JSON_FILE.Formation.map((exp) => (
+            <>
+                <div class="formation-card">
+                    <img src={exp["logo"]} alt="" />
+                    <div class="text-card">
+                        <span class="company">{exp.company}</span>
+                        <span class="role">{exp.role}</span>
+                        <span class="date">{exp.date}</span>
+                    </div>
+                </div>
+            </>
+        ))}
+</div>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .formation {
+        display: flex;
+        flex-direction: column;
+        width: 570px;
+        margin-top: 50px;
+    }
+    .formation h2{
+        display: flex;
+        font-family: sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .formation-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        height: 140px;
+    }
+    .formation-card img{
+        width: 66px;
+        height: 66px;
+        border-radius: 12px;
+    }
+    .text-card{
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        gap: 7px;
+    }
+    .company {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1E293B;
+    }
+    .role {
+        font-size: 18px;
+        color: #334155;
+    }
+    .date {
+        font-family: monospace;
+        font-size: 14px;
+        color: #64748B;
+        margin-top: 10px;
+    }
+    @media (max-width: 550px){
+        .formation{
+            width: 350px;
+        }
+    }
+    
+</style>

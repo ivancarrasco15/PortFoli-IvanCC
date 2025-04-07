@@ -1,0 +1,73 @@
+---
+interface Props{
+    welcomeName?:string;
+    name?: string;
+    title?: string;
+    summary?:string;
+}
+const {welcomeName="Hola soy",name="Nom", title="", summary=""} = Astro.props;
+---
+
+<div id="container">
+    <div class="name-title">
+        <h2>{welcomeName} {name}</h2><span>{title}</span>
+    </div>
+    <div class="separation-line"></div>
+    <div class="summary">
+        <p>{summary}</p>
+    </div>
+</div>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        width: 570px;
+    }
+    .name-title h2{
+        font-size: 36px;
+        line-height: 2.5rem;
+        font-family: sans-serif;
+        margin: 0;
+        font-variation-settings: "wght" 600;
+    }
+    .name-title span{
+        color: #64748B;
+        font-size: 24px;
+        font-family: sans-serif;
+    }
+    .summary{
+        color: #334155;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-bottom: 30px;
+    }
+    .separation-line{
+        border: 1px solid #e5e7eb;
+        width: 570px;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    @media (max-width: 576px){
+        #container{
+            width: 350px;
+        }
+        .name-title h2{
+            font-size: 30px;
+        }
+        .name-title span{
+            font-size: 20px;
+        }
+        .summary{
+            font-size: 18px;
+        }
+        .separation-line{
+            width: 350px;
+        }
+    }
+</style>

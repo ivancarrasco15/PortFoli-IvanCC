@@ -1,0 +1,114 @@
+---
+import contactData from "../../data/cv.json";
+---
+
+
+<section>
+    <div class="contact-container"> {/* Aquí agregamos un div que envuelve todo */}
+      {Object.entries(contactData.contact).map(([key, value]) => (
+        <div key={key} class="contacto">
+          <h2>{key}</h2>
+          <a href={value} target="_blank" rel="noopener noreferrer">{value}</a> {/* Si és una URL, es crea un enllaç */}
+        </div>
+      ))}
+    </div>
+</section>
+
+<section>
+    <h2 class="languages-text">Idiomas</h2>
+    <div class="languages-container">
+      {contactData.languages.map((lang, index) => (
+        <div key={index} class="language">
+          <img src={lang.flag} alt={lang.language + ' flag'} />
+          <div class="language-info">
+            <h2>{lang.language}</h2>
+            <p>{lang.level}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 570px;
+
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
+    .contacto h2{
+        font-size: 20px;
+        font-weight: 600;
+        color: #1E293B;
+    }
+    .contacto a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #334155;
+    }
+    .languages-text{
+        margin-top: 40px;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: left;
+        width: 570px;
+    }
+    .languages-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 20px;
+        max-width: 570px;
+    }
+
+  .language {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: sans-serif;
+        background: #f1f5f9;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .language img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%; /* círculo perfecto */
+        border: 2px solid #e2e8f0;
+    }
+
+    .language-info h2 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1E293B;
+    }
+
+    .language-info p {
+        font-size: 14px;
+        color: #475569;
+    }
+
+    @media(max-width:550px){
+        .contact-container{
+            width: 350px;
+            gap: 15px;
+        }
+        .contacto h2{
+            font-size: 16px;
+        }
+        .contacto a{
+            font-size: 12px;
+        }
+    }
+</style>

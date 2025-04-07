@@ -1,0 +1,102 @@
+---
+import JSON_FILE from "../../data/cv.json";
+const pageInfo = JSON_FILE.projects;
+---
+
+<div class="text-personal-proj">
+    <h2>Proyectos Personales</h2>
+    <span>A continuación, se muestra una selección de proyectos recientes en los que he trabajado.</span>
+</div>
+
+<div class="projects">
+    {JSON_FILE.projects.map((proj) => (
+        <a href={`/projects/${proj.slug}`} class="project-card">
+            <div><img src={proj["image"]} alt="" /></div>
+            <div class="name-description">
+                <span class="proj-name">{proj.name}</span>
+                <span class="proj-description">{proj.description}</span>
+            </div>
+        </a>
+    ))}
+</div>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .text-personal-proj{
+        font-family: sans-serif;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 570px;
+    }
+    .text-personal-proj span{
+        color: #334155;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-content: center; 
+        padding: 20px;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 400px;
+        padding: 32px;
+        box-sizing: border-box;
+        justify-content: center;
+        background-color: rgb(241, 245, 249);
+        border-radius: 12px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .project-card img {
+        width: 97%;
+        height: 240px;
+        object-fit: cover;
+        border: 7px solid #e5e7eb;
+        border-radius: 15px;
+    }
+
+    .project-card div {
+        padding: 8px 0;
+    }
+
+    .name-description{
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        gap: 7px;
+    }
+    .proj-name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .proj-description {
+        font-size: 16px;
+        font-weight: 500;
+        color: #64748B;
+    }
+
+    .project-card:hover{
+        background-color: rgb(236, 241, 245);
+        cursor: pointer;
+    }
+    @media (max-width: 576px) {
+        .text-personal-proj{
+            width: 350px;
+        }
+        .projects {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

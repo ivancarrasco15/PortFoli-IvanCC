@@ -1,0 +1,66 @@
+--- 
+interface Props{
+    text:string;
+    ruta?:string;
+}
+
+const {text="Button", ruta="/"} = Astro.props;
+import ArrowButton from '../assets/arrow-button.svg';
+---
+<div class="btn">
+    <a href={ruta} class="btn-general">
+        <h4>{text}</h4>
+        <span>
+            <img src={ArrowButton.src} alt="Arrow Icon" class="arrow-icon">
+        </span>
+    </a>
+</div>
+
+
+<style>
+    .btn{
+        display: flex;
+        flex-direction: column;
+        width: 570px;
+    }
+    .btn-general{
+        display: flex;
+        width: 200px;
+        height: 40px;
+        background-color: #020617;
+        border: 0;
+        border-radius: 999999px;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        justify-content: center;
+    }
+    .btn-general h4{
+        color: white;
+        font-size: 12px;
+        font-family: monospace;
+    }
+    .btn-general span{
+        width: 20px;
+        height: 20px;
+        align-items: center;
+    }
+    .arrow-icon {
+        transition: transform 0.3s ease;
+    }
+    .btn-general:hover .arrow-icon {
+        transform: translateX(10px);
+    }
+
+    @media (max-width: 550px){
+        .btn{
+            width: 350px;
+        }
+        .btn-general{
+            width: 150px;
+        }
+        .btn-general h4{
+            font-size: 10px;
+        }
+    }
+</style>

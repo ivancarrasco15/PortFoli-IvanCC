@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Error404 from '../assets/404_G.png';
+import Boto from '../components/Boto.astro';
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<div class="container-error">
+		<img src={Error404.src} alt="Arrow Icon" class="error-image">
+		<p class="text-back-to">Lo siento, no pudimos encontrar la página. Verifica la URL e inténtalo nuevamente.</p>
+		<span class="text-back-to">Vuelve a:</span>
+		<div class="btn-index">
+			<Boto text="Página de inicio" ruta="/"/>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	
+	.container-error {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: 100vh;
+		text-align: center;
+	}
+
+	.error-image {
+		width: 570px;
+		max-width: 100%;
+	}
+
+	.text-back-to {
+		font-family: monospace;
+		width: 570px;
+		font-size: 20px;
+		color: #020617;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.btn-index {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
