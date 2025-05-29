@@ -87,10 +87,10 @@
             "name": "Bebida energética Stormcharge",
             "description": "Aplicación de venta de bebidas energéticas.",
             "url": "https://stormcharge.netlify.app",
-            "largeDescription": "Pagina totalmente increible me gusta mucho",
+            "largeDescription": "Crear una pàgina web moderna i visualment impactant per promocionar STORMCHARGE, una beguda energètica pensada per a persones actives i creatives. L'objectiu és transmetre energia, velocitat i modernitat, combinant una estètica potent amb una navegació clara i funcional. La web ha estat dissenyada amb HTML i CSS purs, amb un enfocament responsive per adaptar-se a tot tipus de dispositius.",
             "licenseImage": "CC BY-NC-SA",
             "video": "/videoStormcharge2.mp4",
-            "image": "https://i.ibb.co/zVTWxpqz/portada-stormcharge.webp"
+            "image": "/portada-stormcharge.webp"
         }
     ],
     "skills": [{
