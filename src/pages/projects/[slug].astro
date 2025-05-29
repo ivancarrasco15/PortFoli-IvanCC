@@ -29,7 +29,7 @@ if (!project){
         <p class="project-license project-description">{project.licenseImage}</p>
         <p class="project-description">{project.largeDescription}</p>
         <a href={project.url}>Preview {project.name}</a>
-        <video src={project.video} autoplay loop muted controls={false}></video>
+        <video src={project.video} autoplay loop muted controls={false} class="project-video"></video>
     </div>
     
 </Layout>
@@ -53,6 +53,16 @@ if (!project){
         object-fit: cover;
         border: 7px solid #e5e7eb;
         border-radius: 15px;
+    }
+    .project-video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* opacity: .3; */
+        /* z-index: 0; */
     }
     .project-license{
         display: flex;
