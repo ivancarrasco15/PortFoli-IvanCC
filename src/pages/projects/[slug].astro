@@ -26,7 +26,7 @@ if (!project){
         <h1 class="project-name">{project.name}</h1>
         <p class="project-description">{project.description}</p>
         <img class="project-image" src={project.image} alt="Imagen del proyecto">
-        <p class="project-description">{project.licenseImage}</p>
+        <p class="project-license">{project.licenseImage}</p>
         <p class="project-description">{project.largeDescription}</p>
         <a href={project.url}>Preview {project.name}</a>
     </div>
@@ -52,6 +52,9 @@ if (!project){
         object-fit: cover;
         border: 7px solid #e5e7eb;
         border-radius: 15px;
+    }
+    .project-license{
+        justify-content: right;
     }
     .project a {
         display: flex;
