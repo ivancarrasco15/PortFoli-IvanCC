@@ -89,7 +89,7 @@
             "url": "https://stormcharge.netlify.app",
             "largeDescription": "Pagina totalmente increible me gusta mucho",
             "licenseImage": "CC BY-NC-SA",
-            "video": "../public/videoStormcharge2.mp4",
+            "video": "/videoStormcharge2.mp4",
             "image": "https://i.ibb.co/zVTWxpqz/portada-stormcharge.webp"
         }
     ],

@@ -30,7 +30,7 @@ if (!project){
         <p class="project-description">{project.largeDescription}</p>
         <a href={project.url}>Preview {project.name}</a>
         <div class="project-video">
-            <video src={project.video} autoplay loop muted></video>
+            <video src={project.video} autoplay loop muted controls={false}></video>
         </div>
     </div>
     
