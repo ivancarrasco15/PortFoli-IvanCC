@@ -29,7 +29,7 @@ if (!project){
         <p class="project-license project-description">{project.licenseImage}</p>
         <p class="project-description">{project.largeDescription}</p>
         <a href={project.url}>Preview {project.name}</a>
-        <video src={project.video} autoplay loop muted></video>
+        <video src={project.video} autoplay loop muted controls={false}></video>
     </div>
     
 </Layout>
