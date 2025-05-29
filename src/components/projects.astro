@@ -11,7 +11,11 @@ const pageInfo = JSON_FILE.projects;
 <div class="projects">
     {JSON_FILE.projects.map((proj) => (
         <a href={`/projects/${proj.slug}`} class="project-card">
-            <div><img src={proj["image"]} alt="" /></div>
+            <div>
+                <picture>
+                    <img src={proj["image"]} alt="" />
+                </picture>
+            </div>
             <div class="name-description">
                 <span class="proj-name">{proj.name}</span>
                 <span class="proj-description">{proj.description}</span>
