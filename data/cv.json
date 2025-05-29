@@ -87,6 +87,8 @@
             "name": "Bebida energética Stormcharge",
             "description": "Aplicación de venta de bebidas energéticas.",
             "url": "https://stormcharge.netlify.app",
+            "largeDescription": "Pagina totalmente increible me gusta mucho",
+            "licenseImage": "CC BY-NC-SA",
             "image": "../src/assets/portada-stormcharge.webp"
         }
     ],
